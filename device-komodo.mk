@@ -362,5 +362,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     sensors.dynamic_sensor_hal
 
+PRODUCT_PACKAGES += fir-proximity-feature.xml
+
 # Wireless charging
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/wireless_charger/compatibility_matrix.xml
