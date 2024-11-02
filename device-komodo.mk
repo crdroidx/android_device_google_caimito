@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
 DEVICE_MANIFEST_FILE += device/google/gs-common/bcmbt/manifest_bluetooth.xml
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += device/google/gs-common/bcmbt/compatibility_matrix.xml
 
+# Camera
+$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+
 # Touch
 PRODUCT_PACKAGES += \
     dump_touch.sh \
