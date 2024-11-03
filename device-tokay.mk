@@ -320,6 +320,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PixelDisplayServiceOverlayTokay
 
+# Pixel Parts
+$(call inherit-product-if-exists, packages/apps/PixelParts/device.mk)
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
