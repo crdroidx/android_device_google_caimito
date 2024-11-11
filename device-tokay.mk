@@ -311,6 +311,9 @@ PRODUCT_PACKAGES += \
 # Face unlock
 $(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.location.gps.prebuilt.xml
